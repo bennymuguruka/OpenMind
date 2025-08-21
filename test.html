@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Self-Check - Quiz</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+  <!-- Global Header & Navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">OpenMind</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="test.html" class="active">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Welcome Card -->
+    <input type="radio" id="welcome-screen" name="screen" checked>
+    <div class="welcome-card" role="main" aria-labelledby="welcome-title">
+      
+      <!-- Header Section -->
+      <div class="card-header">
+        <div class="header-icon" aria-hidden="true">
+          <img src="images/Doctors.png" alt="" width="100" height="100">
+        </div>
+        <h1 id="welcome-title">Mental Health Self-Check</h1>
+        <p class="subtitle" role="doc-subtitle">
+          A gentle reflection tool to help you understand how you're feeling and find supportive resources
+        </p>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="card-content">
+        <p class="question_main" role="heading" aria-level="2">Ready to check in with yourself?</p>
+        <p class="description">
+          This brief assessment will help you reflect on your current mental state and provide personalized guidance.
+        </p>
+        <label for="quiz-screen" class="start-btn" role="button" tabindex="0" aria-label="Begin mental health self-check assessment">
+          Begin Check-In
+        </label>
+      </div>
+
+      <!-- Disclaimer Section -->
+      <div class="disclaimer-box" role="alert" aria-label="Important disclaimer">
+        <p>
+          <strong>Important:</strong> This is not a diagnostic tool and cannot replace professional medical advice. 
+          If you're experiencing thoughts of self-harm or crisis, please reach out to emergency services or a crisis 
+          helpline immediately. Your mental health matters, and help is available.
+        </p>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <input type="radio" id="quiz-screen" name="screen" aria-hidden="true">
+    <section class="quiz" id="quiz-section" role="main" aria-label="Mental health assessment questions">
+
+      <!-- Step 1: Root Question -->
+      <input type="radio" id="q1" name="step" checked>
+      <div class="card q1" role="region" aria-labelledby="question-1-title">
+        
+        <!-- Header Section -->
+        <div class="card-header">
+          <div class="header-icon" aria-hidden="true">
+            <img src="images/Thinking.png" alt="" width="100" height="100">
+          </div>
+          <h2 id="question-1-title">Question 1</h2>
+          <p class="subtitle" id="question-1-desc" role="doc-subtitle">
+            Let's start with how you've been feeling lately
+          </p>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="card-content">
+          <p class="question_main" id="question-1-text" role="heading" aria-level="3">How have you been feeling lately?</p>
+          
+          <div class="answer-options" role="radiogroup" aria-label="How have you been feeling lately?" aria-describedby="question-1-desc">
+            
+            <label for="q2-ptsd" class="answer-option" role="radio" aria-checked="false">
+              <input type="radio" name="q1a">
+              <span class="option-emoji" aria-hidden="true">
+                <img src="images/shock.png" alt="" width="35" height="35">
+              </span>
+              <span class="option-text">Experiencing flashbacks or trauma-related distress</span>
+            </label>
+
+            <label for="q2-anxiety" class="answer-option" role="radio" aria-checked="false">
+              <input type="radio" name="q1a">
+              <span class="option-emoji" aria-hidden="true">
+                <img src="images/anxious with sweat.png" alt="" width="35" height="35">
+              </span>
+              <span class="option-text">Restless, worried, or on edge</span>
+            </label>
+
+            <label for="q2-depression" class="answer-option" role="radio" aria-checked="false">
+              <input type="radio" name="q1a">
+              <span class="option-emoji" aria-hidden="true">
+                <img src="images/sad.png" alt="" width="35" height="35">
+              </span>
+              <span class="option-text">Sad, hopeless, or losing interest</span>
+            </label>
+
+            <label for="q2-ocd" class="answer-option" role="radio" aria-checked="false">
+              <input type="radio" name="q1a">
+              <span class="option-emoji" aria-hidden="true">
+                <img src="images/repeat.png" alt="" width="35" height="35">
+              </span>
+              <span class="option-text">Troubled by repetitive thoughts or behaviors</span>
+            </label>
+
+            <label for="q2-adhd" class="answer-option" role="radio" aria-checked="false">
+              <input type="radio" name="q1a">
+              <span class="option-emoji" aria-hidden="true">
+                <img src="images/Thinking.png" alt="" width="35" height="35">
+              </span>
+              <span class="option-text">Difficulty focusing or feeling hyperactive</span>
+            </label>
+
+            <label for="result-ok" class="answer-option" role="radio" aria-checked="false">
+              <input type="radio" name="q1a">
+              <span class="option-emoji" aria-hidden="true">
+                <img src="images/happy.png" alt="" width="35" height="35">
+              </span>
+              <span class="option-text">I feel generally okay / None apply</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Disclaimer Section -->
+        <div class="disclaimer-box" role="note" aria-label="Question guidance">
+          <p>
+            <strong>Note:</strong> Choose the option that best describes your current experience. 
+            There are no right or wrong answers.
+          </p>
+        </div>
+      </div>
+
+      <!-- ========== PTSD PATH ========== -->
+      <input type="radio" id="q2-ptsd" name="step">
+      <div class="card q2-ptsd">
+        <p class="question">2. Do you experience unwanted memories or nightmares about past traumatic events?</p>
+        <label for="q3-ptsd">
+          <input type="radio" name="q2a-ptsd"> Yes, frequently
+        </label>
+        <label for="q3-ptsd">
+          <input type="radio" name="q2a-ptsd"> Sometimes
+        </label>
+      </div>
+
+      <input type="radio" id="q3-ptsd" name="step">
+      <div class="card q3-ptsd">
+        <p class="question">3. Do you find yourself avoiding situations, places, or thoughts that remind you of traumatic experiences?</p>
+        <label for="result-ptsd" class="answer-option">
+          <input type="radio" name="q3a-ptsd"> Yes, often
+        </label>
+        <label for="result-ptsd" class="answer-option">
+          <input type="radio" name="q3a-ptsd"> Sometimes
+        </label>
+      </div>
+
+      <!-- Result: PTSD -->
+      <input type="radio" id="result-ptsd" name="step">
+      <div class="card result-card result-ptsd" role="region" aria-labelledby="result-ptsd-title">
+        <h2 id="result-ptsd-title">Suggested: PTSD</h2>
+        <p>
+          Your responses suggest you may be experiencing <strong>Post-Traumatic Stress Disorder (PTSD)</strong>. 
+          PTSD can develop after exposure to traumatic events and can affect daily life significantly. 
+          Professional support can help develop coping strategies and work through trauma.
+        </p>
+        <div class="result-actions" role="group" aria-label="Next steps">
+          <p><a href="lessons.html#ptsd-lesson" aria-label="Learn more about PTSD in our lessons section">See PTSD Lessons</a></p>
+          <a href="test.html" class="retake-btn" role="button" aria-label="Start the mental health assessment again">Take Test Again</a>
+        </div>
+      </div>
+
+      <!-- ========== ANXIETY PATH ========== -->
+      <input type="radio" id="q2-anxiety" name="step">
+      <div class="card q2-anxiety">
+        <p class="question">2. Do you often feel your mind is racing?</p>
+        <label for="q3-anxiety">
+          <input type="radio" name="q2a-anxiety"> Yes, almost daily
+        </label>
+        <label for="q3-anxiety">
+          <input type="radio" name="q2a-anxiety"> Sometimes
+        </label>
+      </div>
+
+      <input type="radio" id="q3-anxiety" name="step">
+      <div class="card q3-anxiety">
+        <p class="question">3. Do you experience physical symptoms like a fast heartbeat or sweating?</p>
+        <label for="result-anxiety">
+          <input type="radio" name="q3a-anxiety"> Frequently
+        </label>
+        <label for="result-anxiety">
+          <input type="radio" name="q3a-anxiety"> Occasionally
+        </label>
+      </div>
+
+      <!-- Result: Anxiety -->
+      <input type="radio" id="result-anxiety" name="step">
+      <div class="card result-card result-anxiety">
+        <h2>Suggested: Anxiety</h2>
+        <p>
+          Your responses suggest you may be experiencing <strong>anxiety</strong>. Anxiety often shows up as 
+          restlessness, worry, or difficulty relaxing. Breathing and grounding exercises may help.
+        </p>
+        <p><a href="lessons.html#anxiety-lesson" aria-label="Learn more about anxiety in our lessons section">See Anxiety Lessons</a></p>
+        <a href="test.html" class="retake-btn">Take Test Again</a>
+      </div>
+
+      <!-- ========== DEPRESSION PATH ========== -->
+      <input type="radio" id="q2-depression" name="step">
+      <div class="card q2-depression">
+        <p class="question">2. Do you still enjoy things you used to like?</p>
+        <label for="q3-depression">
+          <input type="radio" name="q2a-depression"> Less than before
+        </label>
+        <label for="q3-depression">
+          <input type="radio" name="q2a-depression"> No, not at all
+        </label>
+      </div>
+
+      <input type="radio" id="q3-depression" name="step">
+      <div class="card q3-depression">
+        <p class="question">3. How are your energy levels?</p>
+        <label for="result-depression">
+          <input type="radio" name="q3a-depression"> Low most of the time
+        </label>
+        <label for="result-depression">
+          <input type="radio" name="q3a-depression"> Very drained
+        </label>
+      </div>
+
+      <!-- Result: Depression -->
+      <input type="radio" id="result-depression" name="step">
+      <div class="card result-card result-depression">
+        <h2>Suggested: Depression</h2>
+        <p>
+          Your responses suggest you may be experiencing <strong>depressive symptoms</strong>. Persistent sadness, 
+          loss of interest, and fatigue are common signs. Consider reaching out for support.
+        </p>
+        <p><a href="lessons.html#depression-lesson" aria-label="Learn more about depression in our lessons section">See Depression Lessons</a></p>
+        <a href="test.html" class="retake-btn">Take Test Again</a>
+      </div>
+
+      <!-- ========== OCD PATH ========== -->
+      <input type="radio" id="q2-ocd" name="step">
+      <div class="card q2-ocd">
+        <p class="question">2. Do you find yourself repeating actions or routines often?</p>
+        <label for="q3-ocd">
+          <input type="radio" name="q2a-ocd"> Yes, frequently
+        </label>
+        <label for="q3-ocd">
+          <input type="radio" name="q2a-ocd"> Sometimes
+        </label>
+      </div>
+
+      <input type="radio" id="q3-ocd" name="step">
+      <div class="card q3-ocd">
+        <p class="question">3. Do unwanted or intrusive thoughts cause you distress?</p>
+        <label for="result-ocd">
+          <input type="radio" name="q3a-ocd"> Yes
+        </label>
+        <label for="result-ocd">
+          <input type="radio" name="q3a-ocd"> Occasionally
+        </label>
+      </div>
+
+      <!-- Result: OCD -->
+      <input type="radio" id="result-ocd" name="step">
+      <div class="card result-card result-ocd">
+        <h2>Suggested: OCD</h2>
+        <p>
+          Your responses suggest you may be experiencing <strong>OCD (Obsessive Compulsive Disorder)</strong>. 
+          This can involve intrusive thoughts and repetitive behaviors. Professional help can provide effective 
+          coping strategies.
+        </p>
+        <p><a href="lessons.html#ocd-lesson" aria-label="Learn more about OCD in our lessons section">See OCD Lessons</a></p>
+        <a href="test.html" class="retake-btn">Take Test Again</a>
+      </div>
+
+      <!-- ========== ADHD PATH ========== -->
+      <input type="radio" id="q2-adhd" name="step">
+      <div class="card q2-adhd">
+        <p class="question">2. Do you have trouble staying focused on tasks or frequently feel restless?</p>
+        <label for="q3-adhd">
+          <input type="radio" name="q2a-adhd"> Yes, most of the time
+        </label>
+        <label for="q3-adhd">
+          <input type="radio" name="q2a-adhd"> Sometimes
+        </label>
+      </div>
+
+      <input type="radio" id="q3-adhd" name="step">
+      <div class="card q3-adhd">
+        <p class="question">3. Do you often find yourself interrupting others or having difficulty waiting your turn?</p>
+        <label for="result-adhd">
+          <input type="radio" name="q3a-adhd"> Yes, frequently
+        </label>
+        <label for="result-adhd">
+          <input type="radio" name="q3a-adhd"> Sometimes
+        </label>
+      </div>
+
+      <!-- Result: ADHD -->
+      <input type="radio" id="result-adhd" name="step">
+      <div class="card result-card result-adhd">
+        <h2>Suggested: ADHD</h2>
+        <p>
+          Your responses suggest you may be experiencing symptoms of <strong>Attention-Deficit/Hyperactivity Disorder (ADHD)</strong>. 
+          ADHD can affect focus, impulse control, and activity levels. Professional assessment can help develop strategies 
+          for managing symptoms and improving daily functioning.
+        </p>
+        <p><a href="lessons.html#adhd-lesson" aria-label="Learn more about ADHD in our lessons section">See ADHD Lessons</a></p>
+        <a href="test.html" class="retake-btn">Take Test Again</a>
+      </div>
+
+      <!-- ========== OK / NONE PATH ========== -->
+      <input type="radio" id="result-ok" name="step">
+      <div class="card result-card result-ok">
+        <h2>Suggested: You're Doing Okay</h2>
+        <p>
+          Your responses suggest you're generally doing alright 💙 That's great! Keep practicing self-care and 
+          maintaining healthy habits.
+        </p>
+        <p>
+          Remember: it's always good to check in with yourself, and support is available anytime you need it.
+        </p>
+        <p><a href="lessons.html" aria-label="Browse all mental health lessons">See General Lessons</a></p>
+        <a href="test.html" class="retake-btn">Take Test Again</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <p>
+      © Mental Health Matters | Made by Ornella Sanvura, Mpho Peleowo, Mugisho Muguruka, 
+      Hedrik Louis Steyl, Thapelo Ramalebana ❤
+    </p>
+  </footer>
+
+</body>
+</html>

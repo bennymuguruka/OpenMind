@@ -1,0 +1,120 @@
+/* ===== CONTACT PAGE SPECIFIC STYLES ===== */
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.page-header {
+  background-color: var(--accent-blue);
+  color: var(--text-white);
+  text-align: center;
+  padding: 1em 0;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Contact Form Styles */
+.form-section {
+  background-color: var(--bg-white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow-heavy);
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.form-section label {/*Changes labels inside the form*/
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-medium);
+  border-radius: 4px;
+  box-sizing: border-box;/*Makes a space at either side of the input box*/
+     /* Both padding and border */
+}
+
+.form-section textarea {
+  background-color: aliceblue;
+}
+
+.form-section button {/*applies the below sepicifications to the buttons inside the form*/
+  background-color: var(--accent-green);
+  color: var(--text-white);
+  padding: 10px 20px;
+  border: none;/*Takes away the border around the button*/
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-section button:hover {/*Slightly darker shade of green when hovering over thebuttons*/
+  background-color: var(--accent-green-dark);
+}
+
+/* Contact Info Styles */
+.info-section {
+  background-color: var(--bg-white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow-heavy);
+}
+
+.info-section h2 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.info-section p {/*ALl p's inside contact info*/
+  margin-bottom: 10px;
+}
+
+.info-section a {/*All os the a's in contact info*/
+  color: var(--border-dark);
+  text-decoration: none;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-item h3 {
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}

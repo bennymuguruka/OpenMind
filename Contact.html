@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mental Health Awareness</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Global Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">OpenMind</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+                <li><a href="test.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-header">
+            <h1>Contact Us</h1><!-- Main header at the top middle of the page --> 
+            <p>Get in touch with us for any questions or concerns</p>
+        </section>
+
+        <section class="form-section"><!--provides a block around the inputs that the user can provide-->
+            <h2>Send us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h2>Other Ways to Reach Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@mentalhealthmatters.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>123 Mental Health Street<br>Wellness City, WC 12345</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2024 Mental Health Matters. All rights reserved.</p>
+    </footer>
+</body>
+</html>

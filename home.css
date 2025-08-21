@@ -1,0 +1,52 @@
+/* ===== HOME PAGE SPECIFIC STYLES ===== */
+
+body {
+  background: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/images..png');
+  min-height: 600px;
+  display: grid;               
+  place-items: center;         
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(70, 70, 74, 0.5);
+}
+
+.hero-content { 
+  position: relative;
+  color: var(--text-white);
+  max-width: 700px;
+}
+
+.hero h1 {   
+  font-size: 30px; 
+  margin-bottom: 15px;
+}
+
+.hero p { 
+  font-size: 1.2rem;
+  margin-bottom: 25px; 
+}
+
+.last { 
+  background: var(--accent-blue);
+  color: var(--text-white);
+  padding: 12px 25px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
